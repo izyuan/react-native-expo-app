@@ -3,8 +3,6 @@ import { Text, View } from "react-native";
 import { verifyInstallation } from "nativewind";
 
 export default function Index() {
-  verifyInstallation();
-
   return (
     <View
       style={{
@@ -13,7 +11,9 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text className="font-bold text-lg my-10">Welcome to ReState</Text>
+      <Text className="font-bold my-10 font-rubik text-3xl">
+        Welcome to ReState
+      </Text>
       <Link href="/sign-in"> Sign In </Link>
       <Link href="/explore"> Explore </Link>
       <Link href="/profile"> profile</Link>
