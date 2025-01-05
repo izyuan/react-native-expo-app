@@ -11,7 +11,13 @@ export default function Index() {
       }}
     >
       <Text className="font-bold text-lg my-10">Welcome to ReState</Text>
-      <Link href="/sign-in"> Sign In </Link>
+      <Link
+        href="/sign-in"
+        className="bg-blue-500"
+      >
+        {" "}
+        Sign In{" "}
+      </Link>
       <Link href="/explore"> Explore </Link>
       <Link href="/profile"> profile</Link>
       <Link href="/properties/1">Properties </Link>
