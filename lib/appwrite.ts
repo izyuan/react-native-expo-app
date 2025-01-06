@@ -52,14 +52,14 @@ export async function login() {
 
 export async function logout() {
   try {
-    await account.deleteSession("current");
-    return true;
+    const result = await account.deleteSession("current");
+    return result;
   } catch (error) {
     console.error(error);
     return false;
   }
 }
-export async function getUser() {
+export async function getCurrentUser() {
   try {
     const response = await account.get();
 
